@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poomses por Cinturón - App Taekwondo</title>
+    <title>Poomses, Kichos y Sambon - App Taekwondo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,11 +12,12 @@
         <h1>Recursos de Taekwondo</h1>
     </header>
 
+    <!-- Menú Principal -->
     <nav>
         <ul>
-            <li><a href="poomses.html" class="active">Poomses</a></li>
-            <li><a href="kitchos.html">Kitchos</a></li>
-            <li><a href="samboderians.html">Samboderians</a></li>
+            <li><a href="poomses.html" class="active">Poomses / Formas</a></li> <!-- Cambiado para reflejar contenido -->
+            <li><a href="kitchos.html">Kitchos</a></li> <!-- Podrías quitarlo si los Kichos ya están aquí -->
+            <li><a href="samboderians.html">Samboderians</a></li> <!-- Podrías quitarlo si ya están aquí -->
             <li><a href="tecnicas.html">Técnicas de Taekwondo</a></li>
             <li><a href="defensa-personal.html">Defensa Personal (Hosinsul)</a></li>
             <li><a href="caidas.html">Caídas (Nak Beop)</a></li>
@@ -28,169 +29,216 @@
     </nav>
 
     <main>
-        <h2>Poomses (Formas) por Cinturón</h2>
-        <p>Selecciona un cinturón para ver los poomses correspondientes.</p>
+        <h2>Formas por Cinturón (Poomsae, Kicho, Sambon Kyorugi)</h2>
+        <p>Selecciona un cinturón para ver las formas correspondientes. Haz clic en el nombre para ver el video.</p>
 
-        <!-- Sub-navegación por Cinturones con clases de color -->
+        <!-- Sub-navegación por Cinturones (Nuestra estructura) -->
         <nav class="belt-navigation">
             <h4>Selecciona un Cinturón:</h4>
-            <!-- Enlaces ahora con data-target para JS y clases de color para CSS -->
             <a href="#" class="belt-nav-button belt-white" data-target="cinturon-blanco">Blanco</a>
             <a href="#" class="belt-nav-button belt-yellow" data-target="cinturon-amarillo">Amarillo</a>
             <a href="#" class="belt-nav-button belt-orange" data-target="cinturon-naranja">Naranja</a>
             <a href="#" class="belt-nav-button belt-green" data-target="cinturon-verde">Verde</a>
             <a href="#" class="belt-nav-button belt-blue" data-target="cinturon-azul">Azul</a>
             <a href="#" class="belt-nav-button belt-red" data-target="cinturon-rojo">Rojo</a>
-            <a href="#" class="belt-nav-button belt-black" data-target="cinturon-negro">Negro</a>
+            <!-- <a href="#" class="belt-nav-button belt-black" data-target="cinturon-negro">Negro</a> --> <!-- Comentado si no hay contenido negro en tu lista -->
         </nav>
         <!-- Fin Sub-navegación -->
 
         <hr>
 
-        <!-- Contenedor para todas las secciones de poomses -->
+        <!-- Contenedor para todas las secciones de contenido (Nuestra estructura) -->
         <div class="poomsae-sections-container">
 
-            <!-- Sección Cinturón Blanco (Inicialmente oculta) -->
+            <!-- Sección Cinturón Blanco (Contenido tuyo adaptado) -->
             <section id="cinturon-blanco" class="belt-section">
-                <h3>Cinturón Blanco (10º Gup)</h3>
-                <p>En este nivel inicial, el enfoque principal está en los movimientos básicos, posiciones y las formas fundamentales Kitcho. Puedes encontrarlas en la sección <a href="kitchos.html">Kitchos</a>.</p>
+                <h3>Cinturón Blanco</h3>
+                <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="9Pd7dvz1mtQ">Taeguk Il Chang</button></li>
+                    </ul>
+                </div>
+                <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="d082oCqYWKU">Sanchi Han</button></li>
+                    </ul>
+                </div>
+                 <p class="note">Nota: Los nombres pueden variar ligeramente (Il vs 1). El contenido principal suelen ser Kichos y técnicas básicas.</p>
             </section>
 
-            <!-- Sección Cinturón Amarillo (Inicialmente oculta) -->
+            <!-- Sección Cinturón Amarillo (Contenido tuyo adaptado) -->
             <section id="cinturon-amarillo" class="belt-section">
-                <h3>Cinturón Amarillo (8º Gup)</h3>
-                <article class="poomsae-item">
-                    <h4>Taegeuk Il Jang (태극 1장)</h4>
-                    <p><strong>Significado:</strong> Cielo y Luz (Keon).</p>
-                    <p><strong>Movimientos:</strong> 18</p>
-                    <p><strong>Diagrama:</strong> <img src="img/diagrama_il_jang.png" alt="Diagrama Taegeuk Il Jang" style="max-width: 150px; height: auto; border: 1px solid #ccc; display: block; margin-bottom: 10px;"></p>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/A1d0TSSo0_M?si=V4_fE_aF5CgH7_jD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Ap Seogui, Are Makki, Momtong Bande Jirugi, Ap Chagi.</p>
-                </article>
-                <article class="poomsae-item">
-                    <h4>Taegeuk I Jang (태극 2장)</h4>
-                    <p><strong>Significado:</strong> Alegría y Serenidad (Tae).</p>
-                    <p><strong>Movimientos:</strong> 18</p>
-                    <p><strong>Diagrama:</strong> [Imagen Diagrama I Jang]</p>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Ap Kubi, Olgul Jirugi, Momtong An Makki.</p>
-                </article>
+                <h3>Cinturón Amarillo</h3>
+                 <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="FSB8m0zdAEo">Taeguk I Chang</button></li>
+                        <!-- Añadido basado en nuestra estructura anterior si aplica -->
+                        <!-- <li><button class="video-trigger" data-video-id="VIDEO_ID_TAEGEUK_2">Taegeuk I Jang</button></li> -->
+                    </ul>
+                </div>
+                <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="gFhZbe-lXEQ">Dan-Gun Yang</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>Kicho</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="jk5x0heNWdU">Kicho 1</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>Sambon Kyorugi (Samboderiang)</h4> <!-- Nombre más estándar -->
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="WvPUpKRMHY8">Sambon Kyorugi 1</button></li>
+                        <li><button class="video-trigger" data-video-id="GIksVE1bUSQ">Sambon Kyorugi 2</button></li>
+                    </ul>
+                </div>
             </section>
 
-            <!-- Sección Cinturón Naranja (Inicialmente oculta) -->
+            <!-- Sección Cinturón Naranja (Contenido tuyo adaptado) -->
             <section id="cinturon-naranja" class="belt-section">
-                 <h3>Cinturón Naranja (7º Gup)</h3>
-                <article class="poomsae-item">
-                    <h4>Taegeuk Sam Jang (태극 3장)</h4>
-                    <p><strong>Significado:</strong> Fuego y Sol (Ri).</p>
-                    <p><strong>Movimientos:</strong> 20</p>
-                    <p><strong>Diagrama:</strong> [Imagen Diagrama Sam Jang]</p>
-                    <div class="video-container">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Dwit Kubi, Sonnal Mok Chigi, Jebipoom Mok Chigi.</p>
-                </article>
+                 <h3>Cinturón Naranja</h3>
+                 <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="syTX0igty04">Taeguk Sam Chang</button></li>
+                    </ul>
+                </div>
+                <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="ZymHffK60Lg">Do-San Yang</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                     <h4>Sambon Kyorugi (Samboderiang)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="dj0eNgHrFI4">Sambon Kyorugi 3</button></li>
+                    </ul>
+                </div>
             </section>
 
-             <!-- Sección Cinturón Verde (Inicialmente oculta) -->
+             <!-- Sección Cinturón Verde (Contenido tuyo adaptado) -->
             <section id="cinturon-verde" class="belt-section">
-                <h3>Cinturón Verde (6º Gup)</h3>
-                <article class="poomsae-item">
-                    <h4>Taegeuk Sa Jang (태극 4장)</h4>
-                    <p><strong>Significado:</strong> Trueno (Jin).</p>
-                    <p><strong>Movimientos:</strong> 20</p>
-                     <p><strong>Diagrama:</strong> [Imagen Diagrama Sa Jang]</p>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Sonnal Momtong Makki, Pyonsonkkeut Sewo Tzireugi, Yop Chagi.</p>
-                </article>
+                <h3>Cinturón Verde</h3>
+                 <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="ASUa6pRm2bs">Taeguk Sa Chang</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="lfy3rT86OpI">Won-Hyo Yang</button></li>
+                    </ul>
+                 </div>
+                 <div class="form-category">
+                    <h4>Kicho</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="DrgmLQKj5OQ">Kicho 2</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>Sambon Kyorugi (Samboderiang)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="nWLtUAQEVbo">Sambon Kyorugi 4</button></li>
+                    </ul>
+                </div>
             </section>
 
-             <!-- Sección Cinturón Azul (Inicialmente oculta) -->
+             <!-- Sección Cinturón Azul (Contenido tuyo adaptado) -->
             <section id="cinturon-azul" class="belt-section">
-                 <h3>Cinturón Azul (4º Gup)</h3>
-                 <article class="poomsae-item">
-                    <h4>Taegeuk Oh Jang (태극 5장)</h4>
-                    <p><strong>Significado:</strong> Viento (Son).</p>
-                    <p><strong>Movimientos:</strong> 20</p>
-                     <p><strong>Diagrama:</strong> [Imagen Diagrama Oh Jang]</p>
-                    <div class="video-container">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Me Jumeok Naeryo Chigi, Palkup Dollyo Chigi, Palkup Pyojeok Chigi.</p>
-                </article>
-                 <article class="poomsae-item">
-                    <h4>Taegeuk Yuk Jang (태극 6장)</h4>
-                    <p><strong>Significado:</strong> Agua (Gam).</p>
-                    <p><strong>Movimientos:</strong> 23</p>
-                     <p><strong>Diagrama:</strong> [Imagen Diagrama Yuk Jang]</p>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Hansonnal Olgul Bakat Makki, Dollyo Chagi, Batangson Momtong Makki.</p>
-                </article>
+                 <h3>Cinturón Azul</h3>
+                 <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="7rnuN_CBn0I">Taeguk Oh Chang</button></li>
+                        <li><button class="video-trigger" data-video-id="GrC2oVYwUM8">Taeguk Yuk Chang</button></li>
+                    </ul>
+                </div>
+                <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="I-GhxuaVAh0">Yul-Gok Gup</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>Sambon Kyorugi (Samboderiang)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="ZnLAiOKe7do">Sambon Kyorugi 5</button></li>
+                    </ul>
+                </div>
             </section>
 
-             <!-- Sección Cinturón Rojo (Inicialmente oculta) -->
+             <!-- Sección Cinturón Rojo (Contenido tuyo adaptado) -->
             <section id="cinturon-rojo" class="belt-section">
-                <h3>Cinturón Rojo (2º Gup)</h3>
-                <article class="poomsae-item">
-                    <h4>Taegeuk Chil Jang (태극 7장)</h4>
-                    <p><strong>Significado:</strong> Montaña (Gan).</p>
-                    <p><strong>Movimientos:</strong> 25</p>
-                    <p><strong>Diagrama:</strong> [Imagen Diagrama Chil Jang]</p>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                     <p><strong>Claves:</strong> Beom Seogi, Sonnal Arae Makki, Bojumeok, Gawi Makki, Mureup Chigi.</p>
-                </article>
-                <article class="poomsae-item">
-                    <h4>Taegeuk Pal Jang (태극 8장)</h4>
-                    <p><strong>Significado:</strong> Tierra (Gon).</p>
-                    <p><strong>Movimientos:</strong> 24</p>
-                    <p><strong>Diagrama:</strong> [Imagen Diagrama Pal Jang]</p>
-                    <div class="video-container">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_TAEGEUK_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Dubal Dangsong Ap Chagi (patada frontal saltando), Palkup Olgul Dollyo Chigi, Oesanteul Makki.</p>
-                </article>
+                <h3>Cinturón Rojo</h3>
+                <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="VXvkQjdUUto">Taeguk Chil Chang</button></li>
+                        <li><button class="video-trigger" data-video-id="vGWkdK7m3kY">Taeguk Pal Chang</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                     <p>(Formas ITF para rojo/negro como Joong-Gun, Toi-Gye, Hwa-Rang no incluidas en la lista original)</p>
+                    <!-- Puedes añadir botones si tienes los video IDs -->
+                 </div>
+                 <div class="form-category">
+                    <h4>Kicho</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="Omtp1xKqFr0">Kicho 3</button></li>
+                    </ul>
+                </div>
+                 <div class="form-category">
+                    <h4>Sambon Kyorugi (Samboderiang)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="uQxYJHg8JZ0">Sambon Kyorugi 6</button></li>
+                    </ul>
+                 </div>
             </section>
 
-             <!-- Sección Cinturón Negro (Inicialmente oculta) -->
+            <!-- Sección Cinturón Negro (Placeholder, puedes añadir contenido si lo tienes) -->
+            <!--
             <section id="cinturon-negro" class="belt-section">
-                <h3>Cinturón Negro (1º Dan y Superiores)</h3>
-                <p>A partir de cinturón negro se aprenden los poomses superiores (Yudansha Poomses).</p>
-                <article class="poomsae-item">
-                    <h4>Koryo (고려)</h4>
-                    <p><strong>Significado:</strong> Relacionado con la antigua dinastía Koryo.</p>
-                    <p><strong>Movimientos:</strong> 30</p>
-                     <p><strong>Diagrama:</strong> [Imagen Diagrama Koryo]</p>
-                     <div class="video-container">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_KORYO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <p><strong>Claves:</strong> Tongmilgi Jumbi, Sonnal Makki, Hansonnal Olgul Bakat Makki, Ap Chagi y Yop Chagi combinadas.</p>
-                </article>
-                 <article class="poomsae-item">
-                    <h4>Keumgang (금강)</h4>
-                    <p><strong>Significado:</strong> Diamante.</p>
-                    <p><strong>Movimientos:</strong> 27</p>
-                     <p><strong>Diagrama:</strong> [Imagen Diagrama Keumgang]</p>
-                     <div class="video-container">
-                         <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_KEUMGANG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                     <p><strong>Claves:</strong> Hakdari Seogi, Keumgang Makki, Kheun Doltzegui.</p>
-                </article>
-                <!-- Añade más poomses de Dan aquí si es necesario -->
+                <h3>Cinturón Negro</h3>
+                <div class="form-category">
+                    <h4>WTF (World Taekwondo)</h4>
+                    <ul>
+                        <li><button class="video-trigger" data-video-id="VIDEO_ID_KORYO">Koryo</button></li>
+                        <li><button class="video-trigger" data-video-id="VIDEO_ID_KEUMGANG">Keumgang</button></li>
+                        --> <!-- Añadir más poomses de Dan --> <!--
+                    </ul>
+                </div>
+                <div class="form-category">
+                    <h4>ITF (International Taekwon-Do Federation)</h4>
+                    <ul>
+                        --> <!-- Añadir formas ITF de Dan si aplica --> <!--
+                    </ul>
+                </div>
             </section>
+            -->
 
         </div> <!-- Fin .poomsae-sections-container -->
 
     </main>
+
+    <!-- Contenedor para mostrar el vídeo Modal (Tu estructura) -->
+    <div id="video-player-container" class="hidden">
+        <button id="close-video" title="Cerrar Video">X</button>
+        <div id="video-player-content">
+            <!-- El iframe de YouTube se insertará aquí por JavaScript -->
+        </div>
+    </div>
+    <!-- Fin Modal -->
+
 
     <footer>
         <p>© 2023 Tu Nombre o Nombre de tu Escuela. Todos los derechos reservados.</p>
