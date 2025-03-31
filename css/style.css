@@ -1,0 +1,140 @@
+/* Estilos Generales */
+* {
+    box-sizing: border-box; /* Mejor manejo del tamaño de cajas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif; /* Fuente simple y legible */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color de texto principal */
+    padding-bottom: 60px; /* Espacio para el footer fijo si se implementa */
+}
+
+.container { /* Contenedor opcional para centrar contenido */
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Limpia floats si se usan */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+/* Encabezado */
+header {
+    background: #003366; /* Azul oscuro (típico de TKD) */
+    color: #fff; /* Texto blanco */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: #e8491d 3px solid; /* Detalle naranja/rojo */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Navegación / Menú */
+nav {
+    background: #444; /* Gris oscuro */
+    padding: 0.8rem 0;
+    margin-bottom: 20px; /* Espacio debajo del menú */
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    text-align: center; /* Centra los elementos del menú */
+}
+
+nav ul li {
+    display: inline-block; /* Pone los elementos en línea */
+    margin: 0 10px; /* Espacio entre botones */
+}
+
+nav ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 10px 15px; /* Área clickeable más grande */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+nav ul li a:hover,
+nav ul li a.active { /* Estilo al pasar el ratón o si es la página activa */
+    background-color: #e8491d; /* Fondo naranja/rojo */
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+    max-width: 960px; /* Ancho máximo del contenido */
+    margin: 20px auto; /* Centrado y con margen superior/inferior */
+    background-color: #fff; /* Fondo blanco para el área de contenido */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+main h2, main h3 {
+    color: #003366; /* Azul oscuro para títulos */
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee; /* Línea separadora sutil */
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+article, section {
+    margin-bottom: 30px; /* Espacio entre secciones/artículos */
+}
+
+hr { /* Línea horizontal para separar elementos */
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+/* Estilos para Videos Incrustados */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Fondo negro mientras carga */
+    margin-bottom: 15px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Quitar borde del iframe */
+}
+
+/* Pie de Página */
+footer {
+    background: #333; /* Gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px; /* Espacio sobre el footer */
+    /* position: fixed; */ /* Descomentar si quieres footer fijo abajo */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
+
+/* Diseño Responsivo Básico */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Hace que los botones ocupen toda la línea */
+        margin: 10px 0; /* Espacio vertical entre botones */
+    }
+
+    main {
+        padding: 15px;
+    }
+}
