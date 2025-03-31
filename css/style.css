@@ -1,175 +1,133 @@
 /* Estilos Generales */
 * {
-    box-sizing: border-box; /* Mejor manejo del tamaño de cajas */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
-    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces internos */
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: sans-serif; /* Fuente simple y legible */
+    font-family: sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Color de texto principal */
-    padding-bottom: 60px; /* Espacio para el footer fijo si se implementa */
-}
-
-.container { /* Contenedor opcional para centrar contenido */
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden; /* Limpia floats si se usan */
-    padding: 0 20px; /* Espaciado lateral */
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 60px;
 }
 
 /* Encabezado */
 header {
-    background: #003366; /* Azul oscuro (típico de TKD) */
-    color: #fff; /* Texto blanco */
+    background: #003366;
+    color: #fff;
     padding: 1rem 0;
     text-align: center;
-    border-bottom: #e8491d 3px solid; /* Detalle naranja/rojo */
+    border-bottom: #e8491d 3px solid;
 }
 
 header h1 {
     margin-bottom: 0.5rem;
+    font-size: 1.8rem; /* Ajustar tamaño si es muy grande */
 }
 
 /* Navegación / Menú Principal */
 nav {
-    background: #444; /* Gris oscuro */
+    background: #444;
     padding: 0.8rem 0;
-    margin-bottom: 20px; /* Espacio debajo del menú */
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none; /* Quita los puntos de la lista */
-    text-align: center; /* Centra los elementos del menú */
+    list-style: none;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline-block; /* Pone los elementos en línea */
-    margin: 0 10px; /* Espacio entre botones */
+    display: inline-block;
+    margin: 0 5px; /* Menos espacio horizontal */
 }
 
 nav ul li a {
-    color: #fff; /* Color del texto del enlace */
-    text-decoration: none; /* Quita el subrayado */
-    padding: 10px 15px; /* Área clickeable más grande */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave */
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px; /* Un poco más pequeño */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
 }
 
 nav ul li a:hover,
-nav ul li a.active { /* Estilo al pasar el ratón o si es la página activa */
-    background-color: #e8491d; /* Fondo naranja/rojo */
+nav ul li a.active {
+    background-color: #e8491d;
 }
 
 /* Contenido Principal */
 main {
-    padding: 20px;
-    max-width: 960px; /* Ancho máximo del contenido */
-    margin: 20px auto; /* Centrado y con margen superior/inferior */
-    background-color: #fff; /* Fondo blanco para el área de contenido */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
-    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Menos padding */
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
-main h2, main h3 {
-    color: #003366; /* Azul oscuro para títulos */
-    margin-bottom: 15px;
+main h2 {
+    color: #003366;
+    margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #eee; /* Línea separadora sutil */
+    border-bottom: 1px solid #eee;
+    font-size: 1.5rem;
 }
-
 main p {
     margin-bottom: 15px;
+    font-size: 0.95rem;
 }
 
-article, section {
-    margin-bottom: 30px; /* Espacio entre secciones/artículos */
-}
-
-hr { /* Línea horizontal para separar elementos */
+hr {
     border: 0;
     height: 1px;
     background: #ccc;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
-/* Estilos para Videos Incrustados */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000; /* Fondo negro mientras carga */
-    margin-bottom: 15px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; /* Quitar borde del iframe */
-}
-
-/* Pie de Página */
-footer {
-    background: #333; /* Gris oscuro */
-    color: #fff; /* Texto blanco */
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 30px; /* Espacio sobre el footer */
-    /* position: fixed; */ /* Descomentar si quieres footer fijo abajo */
-    /* bottom: 0; */
-    /* width: 100%; */
-}
-
-
-/* --- Estilos Específicos para Poomses por Cinturón --- */
+/* --- Estilos Específicos para Poomses/Formas por Cinturón --- */
 
 /* Contenedor de la navegación por cinturones */
 .belt-navigation {
-    background-color: #e9e9e9; /* Fondo ligeramente diferente */
+    background-color: #e9e9e9;
     padding: 15px;
-    margin-bottom: 25px; /* Espacio antes de las secciones */
+    margin-bottom: 25px;
     border-radius: 5px;
-    text-align: center; /* Centra los botones */
+    text-align: center;
 }
 
 .belt-navigation h4 {
     margin-bottom: 10px;
     color: #333;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-/* Estilo base de los botones de navegación por cinturón */
+/* Botones de navegación por cinturón */
 .belt-nav-button {
-    display: inline-block; /* Para que se pongan en línea */
-    color: #fff; /* Color de texto general, se puede sobreescribir */
-    padding: 8px 15px; /* Más padding horizontal */
-    margin: 5px; /* Espacio entre botones */
+    display: inline-block;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
     text-decoration: none;
     border-radius: 4px;
-    border: 1px solid rgba(0,0,0,0.2); /* Borde sutil para definición */
+    border: 1px solid rgba(0,0,0,0.2);
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3); /* Sombra de texto leve */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición para hover */
-    cursor: pointer; /* Indica que es clickeable */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    font-size: 0.9rem; /* Ajustar tamaño */
 }
-
 .belt-nav-button:hover {
-    transform: translateY(-2px); /* Efecto levantar al pasar el ratón */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* Sombra más pronunciada */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
-
-/* Colores específicos para cada botón de cinturón */
 .belt-white { background-color: #f8f9fa; color: #333; border-color: #ccc; text-shadow: none; }
 .belt-yellow { background-color: #ffc107; color: #333; }
 .belt-orange { background-color: #fd7e14; color: #fff; }
@@ -177,35 +135,29 @@ footer {
 .belt-blue { background-color: #007bff; color: #fff; }
 .belt-red { background-color: #dc3545; color: #fff; }
 .belt-black { background-color: #343a40; color: #fff; }
-
-/* Estilo para el botón activo (seleccionado) */
 .belt-nav-button.active {
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3); /* Sombra interior */
-    transform: translateY(1px); /* Efecto presionado */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    transform: translateY(1px);
 }
 
-/* Contenedor de las secciones de poomses */
+/* Contenedor de las secciones de contenido */
 .poomsae-sections-container {
-    /* No necesita estilos especiales por ahora, pero útil para agrupar */
+    /* No necesita estilos especiales */
 }
 
-/* Estilo para las secciones de cada cinturón */
+/* Secciones de cada cinturón */
 .belt-section {
-    display: none; /* OCULTA LAS SECCIONES POR DEFECTO */
+    display: none; /* OCULTA POR DEFECTO */
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 5px solid; /* Borde lateral grueso, el color lo definirá la clase activa */
-    background-color: #ffffff; /* Fondo blanco para la sección activa */
-    border-radius: 0 5px 5px 0; /* Bordes redondeados */
-    animation: fadeIn 0.5s ease; /* Animación de aparición */
+    border-left: 5px solid; /* Color se define abajo */
+    background-color: #ffffff;
+    border-radius: 0 5px 5px 0;
+    animation: fadeIn 0.5s ease;
 }
-
-/* ESTILO PARA MOSTRAR LA SECCIÓN ACTIVA (Clase añadida por JS) */
 .belt-section.active-section {
-    display: block; /* Muestra la sección */
+    display: block; /* Muestra la sección activa */
 }
-
-/* Colores del borde lateral según el cinturón activo */
 .belt-section.active-section[id="cinturon-blanco"] { border-left-color: #ccc; }
 .belt-section.active-section[id="cinturon-amarillo"] { border-left-color: #ffc107; }
 .belt-section.active-section[id="cinturon-naranja"] { border-left-color: #fd7e14; }
@@ -214,64 +166,156 @@ footer {
 .belt-section.active-section[id="cinturon-rojo"] { border-left-color: #dc3545; }
 .belt-section.active-section[id="cinturon-negro"] { border-left-color: #343a40; }
 
-
 .belt-section h3 {
-    color: #003366; /* Mantenemos el azul para consistencia */
-    border-bottom: none; /* Quitamos el borde inferior que ya no es necesario */
+    color: #003366;
+    border-bottom: none;
+    margin-top: 0;
     margin-bottom: 20px;
-    margin-top: 0; /* Quitar margen superior extra */
-    padding-bottom: 0;
+    font-size: 1.3rem;
 }
 
-/* Estilo para cada item de poomsae dentro de una sección */
-.poomsae-item {
-    margin-bottom: 30px; /* Espacio entre poomses del mismo cinturón */
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #ccc; /* Separador suave entre poomses */
+/* Categorías dentro de cada sección (WTF, ITF, Kicho...) */
+.form-category {
+    margin-bottom: 20px;
+}
+.form-category h4 {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 3px;
+}
+.form-category ul {
+    list-style: none;
+    padding-left: 0; /* Quitar padding por defecto de ul */
+}
+.form-category li {
+    margin-bottom: 8px;
 }
 
-.poomsae-item:last-child {
-    border-bottom: none; /* Quita el borde del último item */
-    margin-bottom: 0;
+/* Botones para lanzar videos */
+.video-trigger {
+    background-color: #6c757d; /* Gris */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Asegura que no ocupe toda la línea */
+    margin-right: 5px; /* Espacio si hay varios en línea */
+}
+.video-trigger:hover {
+    background-color: #5a6268; /* Gris más oscuro */
 }
 
-.poomsae-item h4 {
-    color: #e8491d; /* Color naranja para el nombre del poomsae */
-    margin-bottom: 10px;
+p.note {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
 }
+
+/* --- Estilos para el Modal de Video --- */
+#video-player-container {
+    position: fixed; /* Se queda fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente */
+    display: flex; /* Usa flexbox para centrar */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+    opacity: 0; /* Empieza invisible */
+    visibility: hidden; /* Empieza oculto */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#video-player-container.visible { /* Clase para mostrar el modal */
+    opacity: 1;
+    visibility: visible;
+}
+
+#video-player-content {
+    position: relative;
+    width: 90%; /* Ancho relativo */
+    max-width: 800px; /* Ancho máximo */
+    background-color: #000; /* Fondo negro para el video */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    /* Aspect Ratio (16:9) - Padding trick */
+    padding-bottom: 50.6%; /* Aproximado 90% * 9/16 */
+    height: 0;
+    overflow: hidden;
+}
+#video-player-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#close-video {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Círculo */
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 35px; /* Centrar la X verticalmente */
+    text-align: center;
+    cursor: pointer;
+    z-index: 1010; /* Encima del contenido del video */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+#close-video:hover {
+    background-color: #c82333; /* Rojo más oscuro */
+}
+
 
 /* Animación Fade-in */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
 
 /* --- Diseño Responsivo --- */
-
-/* General para pantallas más pequeñas */
 @media (max-width: 768px) {
     nav ul li {
-        display: block; /* Hace que los botones del menú principal ocupen toda la línea */
-        margin: 10px 0; /* Espacio vertical entre botones */
+        display: block;
+        margin: 8px 0;
     }
-
+    nav ul li a {
+        display: block; /* Ocupan todo el ancho */
+    }
     main {
-        padding: 15px;
+        padding: 10px;
     }
+    header h1 { font-size: 1.5rem; }
+    main h2 { font-size: 1.3rem; }
+    .belt-nav-button { font-size: 0.85rem; padding: 7px 10px; }
+    #video-player-content { width: 95%; padding-bottom: 53.4%; /* 95% * 9/16 */}
+    #close-video { width: 30px; height: 30px; font-size: 1rem; line-height: 30px; }
 }
 
-/* Específico para botones de cinturón en pantallas pequeñas */
 @media (max-width: 600px) {
     .belt-nav-button {
-        display: block; /* Un botón de cinturón por línea en móviles */
-        margin: 8px auto; /* Centrado con margen vertical */
-        width: 90%; /* Ancho para que no ocupe todo */
-        padding: 10px 15px; /* Más padding vertical */
+        display: block;
+        margin: 8px auto;
+        width: 90%;
     }
-
-    .belt-section {
-       padding: 15px;
-       border-left-width: 4px; /* Borde un poco más fino */
+     .belt-section {
+        padding: 15px;
+        border-left-width: 4px;
     }
+    .video-trigger { width: 100%; text-align: center; margin-bottom: 5px;} /* Botones ocupan todo el ancho */
 }
